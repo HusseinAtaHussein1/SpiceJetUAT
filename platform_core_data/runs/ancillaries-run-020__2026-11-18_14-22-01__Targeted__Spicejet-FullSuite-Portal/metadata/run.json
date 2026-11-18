@@ -1,0 +1,69 @@
+{
+  "folderName": "ancillaries-run-020__2026-11-18_14-22-01__Targeted__Spicejet-FullSuite-Portal",
+  "index": 20,
+  "runOwner": "ancillaries",
+  "scope": "Targeted",
+  "target": "Spicejet-FullSuite-Portal",
+  "workflow": "unversioned",
+  "targetRef": "9009f45c30c92bd2181a198d4187643df7ee728a",
+  "targetRefScope": [],
+  "targetRefCapturedAt": "2026-11-18T12:22:01.995Z",
+  "targetRepoRoot": "C:/Users/SH/Downloads/SpiceJetUAT/SpiceJetLV",
+  "targetRefReason": "git repository at C:/Users/SH/Downloads/SpiceJetUAT/SpiceJetLV",
+  "createdBy": "Run Manager",
+  "startedTime": "2026-11-18T12:22:01.995Z",
+  "stateSchemaVersion": 1,
+  "stateRevision": 0,
+  "status": "Preparing",
+  "statusReason": null,
+  "statusHistory": [
+    {
+      "at": "2026-11-18T12:22:01.995Z",
+      "from": null,
+      "to": "Preparing",
+      "by": "Run Manager",
+      "reason": "run created"
+    }
+  ],
+  "stages": {},
+  "stateEventSeq": 0,
+  "stateEvents": [],
+  "scopeFamily": "supplier-feature",
+  "feature": "ancillaries",
+  "supplier": "spicejet",
+  "sharedScope": null,
+  "testingLayerScope": [
+    "Portal"
+  ],
+  "scopeHistory": [
+    {
+      "changedAt": "2026-11-18T12:22:12.332Z",
+      "approvedBy": "Hussein",
+      "reason": "Spicejet full Ancillaries suite incl. assisted groups: Portal only",
+      "previous": {
+        "feature": "ancillaries",
+        "supplier": "spicejet",
+        "sharedScope": null,
+        "testingLayerScope": null
+      },
+      "next": {
+        "feature": "ancillaries",
+        "supplier": "spicejet",
+        "sharedScope": null,
+        "testingLayerScope": [
+          "Portal"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "admin": "http://192.168.1.70",
+    "portal": "http://192.168.1.70:9500",
+    "credentialName": "SpiceJetxxxx",
+    "environmentClass": "staging (stated by Hussein 2026-11-18; API_KEY pattern not read by Claude)",
+    "execution": "Headed",
+    "branch": "NDC1_Hussein (BRN1199)",
+    "agency": "AGN_HUS (AGN10546)",
+    "agent": "Hussein"
+  }
+}
