@@ -89,23 +89,23 @@
     "counts": [
       {
         "status": "PASS",
-        "value": 65
+        "value": 78
       },
       {
         "status": "FAIL",
-        "value": 3
+        "value": 5
       },
       {
         "status": "BLOCKED",
-        "value": 25
+        "value": 8
       },
       {
         "status": "INCONCLUSIVE",
-        "value": 3
+        "value": 4
       },
       {
         "status": "NOT_APPLICABLE",
-        "value": 5
+        "value": 6
       },
       {
         "status": "NOT_RUN",
@@ -118,7 +118,7 @@
     ],
     "donut": {
       "focus": "PASS",
-      "percent": 96,
+      "percent": 94,
       "label": "pass rate of cases with a verdict (Passed + Failed)"
     }
   },
@@ -1259,15 +1259,15 @@
           {
             "id": "TC-SM-MCT-004",
             "title": "A seat booked on one flight never appears against another",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "15 · last run 2026-11-18 12:51:29 (–)"
+                "value": "15 · last run 2026-11-18 16:47:51 (48.1 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the multi-city booking up to Book (seats on every flight, a meal, a bag)\" stopped: neither the Price Update pop-up nor Passenger Details appeared"
+                "value": "Seats chosen: SG 614 Rohan Iyerlxyw 3A, SG 141 Rohan Iyerlxyw 5D, SG 141 Aanya Iyerlxyw 5E, SG 603 Rohan Iyerlxyw 2A, SG 5060 Rohan Iyerlxyw 2A. Confirmation shows each against its own flight and passenger (5 seat(s) listed); e-ticket the same (5 listed); itinerary shows each under its own journey, leg and passenger."
               }
             ]
           },
@@ -1289,15 +1289,15 @@
           {
             "id": "TC-SM-MCT-005",
             "title": "Seats and ancillaries survive to the confirmation page per flight",
-            "status": "BLOCKED",
+            "status": "FAIL",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "15 · last run 2026-11-18 12:51:29 (–)"
+                "value": "15 · last run 2026-11-18 16:47:51 (7.7 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the multi-city booking up to Book (seats on every flight, a meal, a bag)\" stopped: neither the Price Update pop-up nor Passenger Details appeared"
+                "value": "Confirmation total 26862 = sum of its lines 26,862.00 (base 16234.5, taxes 7064.5, meal 148.5, seat 789.5, baggage 2625, bundle 0); quoted 26,862.00; wallet 4933835 → 4906973. Meal VGSW and bag \"Rohan Iyerlxyw DEL-DXB Excess Baggage – 10 Kg EGP 2625.0\" on the confirmation, the e-ticket and the itinerary (meal under DEL-BLR: yes; bag under BOM-DXB: NO): NO. Screenshot: `artifacts/failures/TC-SM-MCT-005.png`."
               }
             ]
           },
@@ -1326,135 +1326,135 @@
           {
             "id": "TC-SM-CNF-001",
             "title": "The confirmation total equals what was quoted",
-            "status": "BLOCKED",
+            "status": "FAIL",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Quoted 14,989.50; confirmation Total Amount 14989. Screenshot: `artifacts/failures/TC-SM-CNF-001.png`."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-002",
             "title": "Every price line survives the booking unchanged",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0.1 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Booking screen: base Adult 3378, Child 3378, Infant 1250 = 8,006.00; taxes Adult 1524, Child 1524, Infant 1007.5 = 4,055.50. Confirmation: Base fare 8006, Taxes 4055.5."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-003",
             "title": "Every ancillary reaches the confirmation with its own price",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Each chosen extra on its own line, quoted → confirmed: Meal 148.5 → 148.5, Seat 154 → 154, Baggage 2625 → 2625."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-004",
             "title": "Seats carry through to the right passenger with the right price",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (44.5 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Passenger table: adult row shows seat 2A; child and infant rows show no seat. Itinerary (DEL-BOM): the adult has seat 2A; the child and infant show none."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-007",
             "title": "Infants appear as passengers but carry no seat or ancillaries",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Infant row: \"Kabir Kapooruiam - Infant SG 603 SG 5060 - - - Check In : 0 KG / Cabin :1 additional piece up to 7 kg. Dimensions: 55 x 35 x 25 cm (total 11\" — no seat and no meal, as an infant holds none."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-008",
             "title": "The e-ticket and the confirmation page agree exactly",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (3.3 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "E-ticket (/e-ticket/AGN10546AGNNDCORD261118ZZBYW5) against the confirmation — fare lines identical (base 8006, taxes 4055.5, meal 148.5, seat 154, baggage 2625, bundle 0, total 14989); seat and meal on both."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-010",
             "title": "The wallet is reduced by exactly the booking amount",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (7.7 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Wallet 4963813 → 4948824: a drop of 14,989.00 against a total of 14989."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-011",
             "title": "The Costing tab adds up and is the figure to trust",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (8.4 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Costing tab: Total Booking Amount 14989, Total Sales Amount 14989, Total Net Amount 12061.5, Total SSR Amount 2779 — against the confirmed 14989."
               }
             ]
           },
           {
             "id": "TC-SM-CNF-012",
             "title": "The order page itemises every ancillary and reconciles",
-            "status": "BLOCKED",
+            "status": "NOT_APPLICABLE",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (8.4 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Admin has no My Bookings list and no Costing tab to compare — PNR Query shows the charged total directly (checked by TC-SM-CNF-011)."
               }
             ]
           },
@@ -1573,15 +1573,15 @@
           {
             "id": "TC-ML-005",
             "title": "The chosen meal reaches the confirmation (SPENDS REAL MONEY)",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Meal VGSW against the adult on the confirmation, the e-ticket and the itinerary."
               }
             ]
           }
@@ -1640,15 +1640,15 @@
           {
             "id": "TC-BG-005",
             "title": "The extra bag reaches the confirmation (SPENDS REAL MONEY)",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Extra baggage Excess Baggage – 10 Kg: confirmation \"Rohan Kapooruiam DEL-DXB Excess Baggage – 10 Kg EGP 2625.0\", e-ticket \"Rohan Kapooruiam DEL-DXB Excess Baggage – 10 Kg EGP 2625.0\", itinerary under the adult."
               }
             ]
           }
@@ -1758,60 +1758,60 @@
           {
             "id": "TC-RPT-001",
             "title": "A booking you just made appears in the reports",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (12.4 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "PNR Query finds AGN10546AGNNDCORD261118ZZBYW5 (ref NDCEG-BR-F261118qL4IaL). Booking report, today, finds NDCEG-BR-F261118qL4IaL (invoice INVNDC261118r5c8vp)."
               }
             ]
           },
           {
             "id": "TC-RPT-002",
             "title": "A payment appears in the account statement with the right amount",
-            "status": "BLOCKED",
+            "status": "INCONCLUSIVE",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (9.7 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Statement report, today (last updated 2026-11-18 18:05, booked 2026-11-18 18:31): PNR JBZ2HG not there yet — the report was last updated before this booking (it updates hourly). Recheck after the next update. Screenshot: `artifacts/failures/TC-RPT-002.png`."
               }
             ]
           },
           {
             "id": "TC-RPT-003",
             "title": "The reports agree with the booking and with each other",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (9.8 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Sales report, today — invoice INVNDC261118r5c8vp: \"INVNDC261118r5c8vp Spicejet Hussein 14,989.00 0.00 14,989.00 2 NDC1_Hussein AGN_HUS Rohan Reddyrdtc 18-11-2026 NDCEG-TR261118L0KSvM INVNDC261118tb9p3O Spicejet \". Shows 14,989.00, the amount charged — same as the confirmation, e-ticket and Costing tab."
               }
             ]
           },
           {
             "id": "TC-RPT-004",
             "title": "Extras bought with a booking are visible in the reports",
-            "status": "BLOCKED",
+            "status": "PASS",
             "rows": [
               {
                 "label": "Setup group",
-                "value": "14 · last run 2026-11-18 12:50:08 (–)"
+                "value": "14 · last run 2026-11-18 16:29:20 (0 s)"
               },
               {
                 "label": "Observed",
-                "value": "Not reached: Step \"Build the booking up to Book (seat, meal, bag) and take the pre-Book snapshot\" stopped: the booking is not Confirmed (status \"Failed\")"
+                "value": "Sales row for invoice INVNDC261118r5c8vp: 14,989.00 includes the extras (meal 148.5, seat 154, bag 2625, bundle 0) — not fare-only."
               }
             ]
           }
@@ -2243,8 +2243,10 @@
       "type": "notes",
       "title": "Read this first",
       "blocks": [
-        "129 cases in the checklist for Spicejet on Admin. Each case shows the result of its LATEST execution. Passed 65 · Failed 3 · Blocked 25 · Inconclusive 3 · Not Applicable 5 · Not run 6 · Excluded 22.",
-        "Pass rate of cases with a verdict: 96% (65 of 68). Blocked, Inconclusive and Not run are not counted as passed."
+        "129 cases in the checklist for Spicejet on Admin. Each case shows the result of its LATEST execution. Passed 78 · Failed 5 · Blocked 8 · Inconclusive 4 · Not Applicable 6 · Not run 6 · Excluded 22.",
+        "Pass rate of cases with a verdict: 94% (78 of 83). Blocked, Inconclusive and Not run are not counted as passed.",
+        "Updated 2026-11-18 (Group 14 rerun, log GroupResults_Group14_2026-11-18_16-29-20.md): the 15 Group 14 cases now carry the rerun's results instead of Blocked. Settings file recreated for the rerun; the infant-holding adult kept off seats 5F, 2B, 2C.",
+        "Updated 2026-11-18 (Group 15 rerun, log GroupResults_Group15_2026-11-18_16-47-51.md): TC-SM-MCT-004 and TC-SM-MCT-005 now carry the rerun's results instead of Blocked. Test data given by the human: DEL→BLR 17/12/2026, BLR→DEL 18/12/2026, DEL→DXB 19/12/2026."
       ]
     },
     {
@@ -2252,7 +2254,7 @@
       "title": "Findings",
       "badges": [
         {
-          "value": 3,
+          "value": 5,
           "label": "Need a decision",
           "tone": "warning"
         }
@@ -2287,6 +2289,30 @@
           "tone": "warning",
           "body": "TC-HLD-005: the held booking keeps seat 2B, meal VGSW and bag 10 Kg, but the extras chosen before Hold total 2,824.00 against a costing amount of 2,675.50.",
           "refs": "(TC-HLD-005 · Group 17)"
+        },
+        {
+          "body": "TC-SM-CNF-001 (Group 14 rerun): the quote was 14,989.50 but the confirmation Total Amount is 14,989 — the 0.50 is dropped, beyond the 0.11 tolerance. The same pattern appears in TC-PAH-002 on run 020 (7,829.50 shown, 7,829 charged). A person must decide whether this rounding is a defect.",
+          "tone": "warning",
+          "refs": "(TC-SM-CNF-001 · Group 14)",
+          "kind": "Finding — needs a decision"
+        },
+        {
+          "body": "Group 14: every booking with the infant-holding adult on seat 2B or 2C ended Failed (runs 019 and 020); on 2A (PNR JBZ2HG) and 3A (PNR OGMT3R) it was Confirmed. Same pattern as the recorded seat 5F refusal. Inferred, not confirmed: the airline's refusal reason was not captured. The rerun used settings.local.json infantHolderAvoidSeats [5F, 2B, 2C].",
+          "tone": "neutral",
+          "refs": "(Group 14)",
+          "kind": "Observation"
+        },
+        {
+          "body": "TC-RPT-002 is Inconclusive after the Group 14 rerun: the Statement report updates hourly and had not refreshed since the booking — recheck it.",
+          "tone": "neutral",
+          "refs": "(TC-RPT-002 · Group 14)",
+          "kind": "Observation"
+        },
+        {
+          "kind": "Finding — needs a decision",
+          "tone": "warning",
+          "body": "TC-SM-MCT-005 (Group 15 rerun, PNR S8NTNP): totals agree (quote, confirmation and wallet drop all 26,862) and the meal shows on every page, but the 10 Kg bag is listed against the whole DEL-DXB journey and does not appear under its BOM→DXB flight on the itinerary. That journey connects via BOM (SG 603 + SG 5060). A person must decide whether the bag belongs to the journey (sheet wrong) or to a flight (application wrong).",
+          "refs": "(TC-SM-MCT-005 · Group 15)"
         }
       ]
     },
@@ -2294,8 +2320,8 @@
       "type": "notes",
       "title": "What did not run, and why",
       "blocks": [
-        "Group 14 (booked, with seat, meal and bag — 15 cases) is Blocked on both runs: every booking came back with status \"Failed\", so the itinerary, costing, meal, bag and report checks were not reached. The cause was not diagnosed. Run 015's report traced the same symptom to seat 5F being refused for an adult holding an infant; that was not checked for these runs.",
-        "Multi-city and round-trip cases (groups 10, 11, 15): Step 2 never opened on DEL→DXB / DXB→DEL / DEL→DXB, 19–21 Dec 2026. No usable inventory is suspected; not confirmed. A route with known inventory is needed.",
+        "Group 14 (booked, with seat, meal and bag — 15 cases) was Blocked in the first pass (every booking Failed, infant-holder on 2B). Rerun 2026-11-18 16:29 with the infant-holder on 2A: Confirmed, PNR JBZ2HG — 12 Passed, 1 Failed (TC-SM-CNF-001), 1 Inconclusive (TC-RPT-002, report not refreshed yet), 1 Not Applicable (TC-SM-CNF-012: Admin has no Costing tab).",
+        "Multi-city and round-trip cases (groups 10, 11): Step 2 never opened on DEL→DXB / DXB→DEL / DEL→DXB, 19–21 Dec 2026. No usable inventory is suspected; not confirmed. A route with known inventory is needed. Group 15 was rerun 2026-11-18 on the human's test data DEL→BLR 17/12, BLR→DEL 18/12, DEL→DXB 19/12: Confirmed, PNR S8NTNP — TC-SM-MCT-004 Passed, TC-SM-MCT-005 Failed.",
         "TC-SM-CNF-016 and TC-SM-CNF-017 (group 16): no fare package offered that includes checked baggage.",
         "TC-SM-PRC-005 (group 12): the settings file has no non-EGP credential or ROE.",
         "TC-SM-EXR-005 (group 07): Step 2 did not open, or a locator timed out. Blocked on both runs, twice each.",
@@ -2306,7 +2332,7 @@
     {
       "type": "cleanup",
       "title": "Cleanup / follow-up",
-      "heading": "Staging orders found in the group logs (3; may be incomplete — see groups 14 and 17 logs):",
+      "heading": "Staging orders found in the group logs (6; may be incomplete — see groups 14 and 17 logs):",
       "items": [
         {
           "label": "Group 20 · TC-SM-LEG-003",
@@ -2325,6 +2351,24 @@
           "ref": "NDCEG-BR-F261118QjJ9PZ",
           "refIn": "AGN10546AGNNDCORD261118NIINWR",
           "body": "2026-11-18 13:04"
+        },
+        {
+          "label": "Group 14 · first pass — Failed (2B)",
+          "ref": "NDCEG-BR-F26111835Lysk",
+          "refIn": "AGN10546AGNNDCORD2611189PQS8F",
+          "body": "2026-11-18 12:50"
+        },
+        {
+          "label": "Group 14 · rerun — Confirmed, PNR JBZ2HG (CHARGED)",
+          "ref": "NDCEG-BR-F261118qL4IaL",
+          "refIn": "AGN10546AGNNDCORD261118ZZBYW5",
+          "body": "2026-11-18 16:29"
+        },
+        {
+          "label": "Group 15 · rerun — Confirmed, PNR S8NTNP (CHARGED)",
+          "ref": "NDCEG-BR-F261118VXJ6c8",
+          "refIn": "AGN10546AGNNDCORD261118UXCVHI",
+          "body": "2026-11-18 16:47"
         }
       ]
     }
